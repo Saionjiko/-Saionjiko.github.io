@@ -177,34 +177,37 @@ footer{
 /* 响应式设计语法 */
 @media screen and (max-width: 768px) {
     header ul {
-        display:none;
+        display: none;
     }
     header h1 {
-        left:50%;
         font-size: 20px;
-        transform: translateX(-50%);
-    }
-    .news h2 {
-        font-size:40px;
+        text-align: center;
+        margin: 0;
+        width: 100%;
     }
     .menu {
-        display:block;
+        display: block;
         background-color: transparent;
-        color:white;
+        color: white;
         font-size: 35px;
-        position:absolute;
-        top:15px;
-        left:20px;
-        border:none;
+        position: absolute;
+        top: 15px;
+        right: 20px; /* 调整menu按钮的位置 */
+        border: none;
         cursor: pointer;
+    }
+    .news h2 {
+        font-size: 40px;
+        text-align: center; /* 居中标题文本 */
     }
     .picks {
         flex-direction: column;
     }
     .picks img {
-        width:100%;
+        width: 100%;
     }
     .info {
-        width:100%;
-        padding:40px 0;
+        width: 100%;
+        padding: 40px 0;
     }
+}
